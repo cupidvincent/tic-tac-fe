@@ -5,7 +5,8 @@ export default defineConfig(({ mode }) => {
   let proxyURL;
 
   if (mode === 'development') {
-    proxyURL = 'http://localhost:5000'; // Proxy URL for development environment
+    // proxyURL = 'http://localhost:5000'; // Proxy URL for development environment
+    proxyURL = 'https://tic-tac-toe-h8ml.onrender.com'; // Proxy URL for production environment
   } else {
     proxyURL = 'https://tic-tac-toe-h8ml.onrender.com'; // Proxy URL for production environment
   }
