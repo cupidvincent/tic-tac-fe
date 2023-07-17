@@ -5,9 +5,9 @@ export default defineConfig(({ mode }) => {
   let proxyURL;
 
   if (mode === 'development') {
-    proxyURL = 'http://localhost:5000'; // Proxy URL for development environment
+    proxyURL = 'http://localhost:5000';
   } else {
-    proxyURL = 'https://tic-tac-toe-h8ml.onrender.com'; // Proxy URL for production environment
+    proxyURL = 'https://tic-tac-toe-h8ml.onrender.com';
   }
 
   console.log({mode, proxyURL})
@@ -25,16 +25,3 @@ export default defineConfig(({ mode }) => {
     },
   };
 });
-// https://vitejs.dev/config/
-// export default defineConfig({
-//   plugins: [react()],
-//   server: {
-//     port: 3000,
-//     proxy: {
-//       '/api': {
-//         target: 'http://localhost:5000',
-//         changeOrigin: true
-//       }
-//     }
-//   }
-// })
