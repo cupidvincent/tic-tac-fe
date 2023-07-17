@@ -10,6 +10,8 @@ export default defineConfig(({ mode }) => {
     proxyURL = 'https://tic-tac-toe-h8ml.onrender.com'; // Proxy URL for production environment
   }
 
+  console.log({mode, proxyURL})
+
   return {
     plugins: [react()],
     server: {
